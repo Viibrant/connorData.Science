@@ -24,7 +24,7 @@ def webhook():
     if request.method == "POST":
         x_hub_signature = request.headers.get("X-Hub-Signature")
         print(x_hub_signature)
-        repo = git.Repo(os.getcwd())
+        repo = git.Repo("/home/Viibrant/connorData.Science")
         origin = repo.remotes.origin
         origin.pull()
         return "Updated PythonAnywhere successfully", 200
