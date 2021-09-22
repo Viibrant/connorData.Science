@@ -19,7 +19,7 @@ def projects():
 def contacts():
     return render_template("contacts.html")
 
-@app.route("/update_server", mehods=["POST"])
+@app.route("/update_server", methods=["POST"])
 def webhook():
     if request.method == "POST":
         x_hub_signature = request.headers.get("X-Hub-Signature")
