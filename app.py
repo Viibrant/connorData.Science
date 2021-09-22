@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from os import getcwd
+import os
 import git
 app = Flask(__name__)
 
@@ -22,7 +22,9 @@ def contacts():
 @app.route("/update_server", mehods=["POST"])
 def webhook():
     if request.method == "POST":
-        repo = git.Repo(getcwd())
+        x_hub_signature = request.headers.get("X-Hub-Signature")
+        print(x_hub_signature)
+        repo = git.Repo(os.getcwd())
         origin = repo.remotes.origin
         origin.pull()
         return "Updated PythonAnywhere successfully", 200
