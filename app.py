@@ -1,9 +1,22 @@
-from flask import Flask, render_template  
+from flask import Flask, render_template
 
-app = Flask(__name__) 
+app = Flask(__name__)
 
-@app.route("/") 
-def home(): 
-    return render_template('templates/index.html')
+@app.route("/")
+@app.route("/index")
+def home():
+    return render_template("index.html")
 
-app.run(debug = True)
+@app.route("/cv")
+def cv():
+    return render_template("cv.html")
+
+@app.route("/projects-grid-cards")
+def projects():
+    return render_template("projects-grid-cards.html")
+
+@app.route("/contacts")
+def contacts():
+    return render_template("contacts.html")
+
+app.run(debug=True)
