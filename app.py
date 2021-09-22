@@ -26,8 +26,7 @@ def webhook():
         origin = repo.remotes.origin
         origin.pull()
         return "Updated PythonAnywhere successfully", 200
-    else:
-        return "Wrong event type", 400
+    return "Wrong event type", 400
 
 if __name__ == "__main__":
     app.run(debug=True)
