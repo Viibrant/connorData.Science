@@ -41,7 +41,7 @@ def contacts():
 def webhook():
     if request.method != 'POST':
         return 'OK'
-        
+
     abort_code = 418
     # Do initial validations on required headers
     if 'X-Github-Event' not in request.headers:
