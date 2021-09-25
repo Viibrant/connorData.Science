@@ -1,32 +1,21 @@
-# 🌎 connorData.Science
+# 🌎 <a href=https://www.connorData.Science> connorData.Science </a>
 
 ## About <a name = "about"></a>
 
-This is the repo containing the code behind my website, (hopefully) accessible at https://www.connorData.Science
+This is the repo containing the code behind my website :)
 
 ## Getting Started <a name = "getting_started"></a>
 
-**INSERT FLASK PYTHON INSTRUCTIONS***
+All Flask code is stored in `app.py`. All the HTML files are in `templates/` and all JS/CSS in `static/`
 
 ### Prerequisites
 
-**flask, bootstrap, pending...**
-
 ```
-Give examples
+Flask
 ```
 
-### Installing
+## Built with
 
-**instructions to use pip to install from requirements, then running flask***
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
+Flask - Web Server
+Bootstrap - Responsive CSS Framework
+Bootstrap Studio - Editor for Bootstrap
