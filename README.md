@@ -1,5 +1,5 @@
 <h1 align=center>
-🌎 <a href=https://www.connorData.Science> connorData.Science </a>
+🌍 <a href=https://www.connorData.Science> connorData.Science </a>
   </h1>
   <p align=center> 
   <i>I don't like web dev, please don't judge! ;P </i></p>
