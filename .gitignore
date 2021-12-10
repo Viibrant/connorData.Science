@@ -42,3 +42,5 @@ __pycache__/*
 .pyc*
 __pycache__/
 .vscode
+
+proj
