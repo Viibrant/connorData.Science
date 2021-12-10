@@ -1,0 +1,3 @@
+[submodule "projects/covid-dashboard"]
+	path = projects/covid-dashboard
+	url = https://github.com/Viibrant/covid-dashboard
