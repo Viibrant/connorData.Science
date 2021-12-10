@@ -1,13 +1,10 @@
-from flask import Flask
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
-from werkzeug.exceptions import NotFound
+from werkzeug.serving import run_simple
 
-from proj.covid import server as covid_app
-from website import app as main
+from proj.covid import app as covid_app
+from server import app as server
 
-app = Flask(__name__)
-
-app.wsgi_app = DispatcherMiddleware(NotFound(), {"/app1": covid_app, "/app2": main})
+app = DispatcherMiddleware(server, {"/covid": covid_app})
 
 if __name__ == "__main__":
-    app.run()
+    run_simple("localhost", 5000, app, use_reloader=False)

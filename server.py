@@ -99,5 +99,4 @@ def webhook():
 
 
 if __name__ == "__main__":
-    sys.path = [os.getcwd()] + sys.path
     app.run(debug=True)
