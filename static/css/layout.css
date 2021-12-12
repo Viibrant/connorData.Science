@@ -2,7 +2,20 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background: #0f0f0f;}
+
+#loading_screen {
+   background: #0f0f0f;
+   position:absolute; 
+   height:100%; 
+   width:100%; 
+   overflow:hidden; 
+   top: 0; 
+   left: 0;
+   z-index: 1000; 
+
+}
+
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles

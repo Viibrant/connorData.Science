@@ -5,6 +5,13 @@
 -----------------------------------------------------------------------------------*/
 
 jQuery(document).ready(function ($) {
+	function removeLoader() {
+		$("#loading_screen").fadeOut(500, function () {
+			// fadeOut complete. Remove the loading div
+			$("#loading_screen").remove(); //makes page more lightweight
+		});
+	}
+
 	/*----------------------------------------------------*/
 	/* FitText Settings
    ------------------------------------------------------ */
@@ -187,4 +194,5 @@ jQuery(document).ready(function ($) {
 		});
 		return false;
 	});
+	removeLoader();
 });
