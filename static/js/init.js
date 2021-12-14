@@ -33,10 +33,9 @@ jQuery(document).ready(function ($) {
 		.type("Hey! ", { delay: 600 })
 		.type("I'm Connor ", { delay: 300 })
 		.pause(400)
-		.type(";)")
+		.type(":)")
 		.pause(400)
 		.delete(3)
-
 		.go();
 
 	/*----------------------------------------------------*/
