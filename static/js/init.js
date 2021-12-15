@@ -33,9 +33,9 @@ jQuery(document).ready(function ($) {
 		.type("Hey! ", { delay: 600 })
 		.type("I'm Connor ", { delay: 300 })
 		.pause(400)
-		.type(":)")
+		.type(":-)")
 		.pause(400)
-		.delete(3)
+		.delete(4)
 		.go();
 
 	/*----------------------------------------------------*/
@@ -99,7 +99,7 @@ jQuery(document).ready(function ($) {
 
 	/*----------------------------------------------------*/
 	/*	Fade In/Out Primary Navigation
-   ------------------------------------------------------*/
+   ---------------------------------------->-------------*/
 
 	$(window).on("scroll", function () {
 		var h = $("header").height();
