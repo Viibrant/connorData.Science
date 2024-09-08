@@ -1,4 +1,4 @@
-⚠️ Archive Notice 📚 2024/09
+# ⚠️ Archive Notice 📚 2024/09
 
 This repo contains my first website, built with Flask and hosted at connorData.Science. It was my initial dive into web development, which turned out to be more engaging than I anticipated.
 
